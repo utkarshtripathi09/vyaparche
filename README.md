@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Vyaparché 📈
 
-## Getting Started
+> **Real-Time Paper Trading & Multi-Asset Financial Analytics Platform**
 
-First, run the development server:
+[![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)
+[![TradingView](https://img.shields.io/badge/Charts-TradingView-blue)](https://www.tradingview.com/)
 
+**Vyaparché** is an institutional-grade paper trading platform designed for real-time simulated market execution across Forex, Global Equities, Commodities, and Index Funds. Start with a **$100,000 USD virtual portfolio** and practice trading strategies with zero risk.
+
+---
+
+## ✨ Features
+
+- **Multi-Asset Coverage**:
+  - **Forex**: EUR/USD, GBP/USD, USD/JPY with real-time pip spreads.
+  - **Equities**: NVIDIA (NVDA), Apple (AAPL), Tesla (TSLA).
+  - **Commodities & Energy**: WTI Crude Oil, Brent Crude, Spot Gold (XAU/USD).
+  - **Mutual Funds & ETFs**: SPDR S&P 500 (SPY), Vanguard S&P 500 (VOO).
+- **Dual Chart Engines**:
+  - Embedded **TradingView** charts with indicators (RSI, MACD) and multiple timeframes.
+  - High-performance canvas-based **Lightweight Chart** with live order entry price lines.
+- **Full-Screen Chart Terminal**:
+  - Dedicated full-screen mode with non-overlapping action toolbar.
+  - Docked **Order Execution Side Panel** accessible directly from full screen upon clicking Buy or Sell.
+  - Dynamic ring status indicators showing active trade direction.
+- **Realistic Order Execution Engine**:
+  - Instant simulated market execution with live bid/ask quotes.
+  - Leverage selector from **1x to 50x**.
+  - Risk controls: **Stop Loss (SL)** and **Take Profit (TP)**.
+  - Real-time margin collateral and cash purchasing power verification.
+- **On-Chart Trade Overlay**:
+  - Live floating position badges on the chart showing real-time unrealized PnL ($ and %).
+  - In-place Stop Loss / Take Profit modifier modal.
+  - One-click position closing with celebratory feedback on profitable trades.
+- **Technical & Fundamental Analysis**:
+  - Automated bias scoring: RSI(14), MACD, Moving Averages (20/50/200 SMA), Bollinger Bands.
+  - Financial fundamentals: Market cap, P/E ratio, 52-week ranges, beta, dividend yield.
+- **Theme & Persistence**:
+  - One-click **Dark / Light mode** toggle synced across all chart widgets.
+  - LocalStorage persistence preserving account balances, open positions, and trade history.
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 18.17+ or later
+- npm, yarn, or pnpm
+
+### Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/utkarshtripathi09/vyaparche.git
+cd vyaparche
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) (or the assigned port) in your browser.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠 Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Framework**: [Next.js 14](https://nextjs.org/) (App Router)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **UI Components**: [Radix UI](https://www.radix-ui.com/) & [Shadcn UI](https://ui.shadcn.com/)
+- **Charts**: [TradingView Widget](https://www.tradingview.com/widget/) & [Lightweight Charts](https://tradingview.github.io/lightweight-charts/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Effects**: Canvas Confetti
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## ⚠️ Disclaimer
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*Vyaparché is a paper trading simulation platform designed exclusively for educational and analytical purposes. No real currency is deposited, traded, or at risk.*
