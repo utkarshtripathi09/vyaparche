@@ -48,7 +48,6 @@ export const TradingViewWidget = memo(({ symbol, theme: propTheme, className }: 
       hide_top_toolbar: false,
       save_image: true,
       calendar: false,
-      studies: ["STD;RSI", "STD;MACD"],
       support_host: "https://www.tradingview.com"
     })
 
